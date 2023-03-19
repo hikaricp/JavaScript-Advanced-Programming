@@ -1,0 +1,7 @@
+function* generatorFn() {
+    console.log('iter value:', yield* [1, 2, 3]);
+}
+
+for (const x of generatorFn()) {
+    console.log('value:', x);
+}

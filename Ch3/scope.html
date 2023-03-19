@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function test() {
+        var message = "hi"; // 局部变量
+    }
+    test();
+    // console.log(message); // 出错, Uncaught ReferenceError: message is not defined
+
+    function test2() {
+        message = "hi"; // 全局变量，未使用var声明，不建议这么做
+    }
+    test2();
+    console.log(message);
+</script>

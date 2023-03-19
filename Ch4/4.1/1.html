@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <script>
+        function *show() {
+            console.log('a');
+            yield;
+            console.log('b');
+        }
+        
+        let obj = show();
+        console.log(obj);
+    </script>
+    <body>
+    </body>
+</html>
