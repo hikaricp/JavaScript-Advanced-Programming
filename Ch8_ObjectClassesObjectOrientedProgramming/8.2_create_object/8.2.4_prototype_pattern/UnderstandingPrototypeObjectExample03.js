@@ -10,6 +10,9 @@ console.log(Person.prototype !== person1); // true
 console.log(person1.__proto__ === Person.prototype); // true
 console.log(person1.__proto__.constructor === Person); // true
 
+// 同一个构造函数创建的多个实例,共享同一个原型对象
+console.log(person1.__proto__ == person2.__proto__);
+
 // 使用 instanceof 检查实例的原型链中是否包含指定构造函数的原型
 console.log(person1 instanceof Person); // true
 console.log(person1 instanceof Object); // true
