@@ -1,0 +1,1 @@
+setTimeout(console.log, 0, Promise.reject(Promise.resolve())); // Promise {<rejected>: Promise}
