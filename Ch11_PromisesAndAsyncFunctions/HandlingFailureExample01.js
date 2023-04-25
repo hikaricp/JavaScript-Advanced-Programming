@@ -1,14 +1,14 @@
 function double(value, success, failure) {
-    setTimeout(() => {
-        try {
-            if (typeof value !== 'number') {
-                throw 'Must provide number as first argument';
-            }
-            success(2 * value);
-        } catch (e) {
-            failure(e);
-        }
-    }, 1000);
+  setTimeout(() => {
+    try {
+      if (typeof value !== 'number') {
+        throw 'Must provide number as first argument';
+      }
+      success(2 * value);
+    } catch (e) {
+      failure(e);
+    }
+  }, 1000);
 }
 
 const successCallback = (x) => console.log(`Success: ${x}`);
